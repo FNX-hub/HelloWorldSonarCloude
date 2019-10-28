@@ -1,0 +1,11 @@
+language: java
+jdk:
+ - openjdk8
+addons:  
+  sonarcloud:
+    organization: fenix-hub    
+    token:      
+      secure: "d1d0f4c08cb78165957173722d9db68f60fdb33e"
+script:
+ - ant build
+ - sonar-scanner
